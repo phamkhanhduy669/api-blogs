@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng ký - Blog App</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header>
+  <h2>Register</h2>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/login.html">Đăng nhập</a>
+    <a href="/blogs.html">Blogs</a>
+  </nav>
+</header>
+<div class="container">
+  <h1>Đăng ký</h1>
+  <div id="register-alert" class="alert hidden"></div>
+  <form id="register-form">
+    <label>Tên đăng nhập</label>
+    <input name="username" placeholder="username" required />
+    <label>Mật khẩu</label>
+    <input type="password" name="password" placeholder="******" required />
+    <button type="submit">Tạo tài khoản</button>
+  </form>
+</div>
+<footer>© 2025 Blog App</footer>
+<script src="/js/app.js"></script>
+<script>
+  App.initRegister();
+</script>
+</body>
+</html>

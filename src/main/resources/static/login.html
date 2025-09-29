@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng nhập - Blog App</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header>
+  <h2>Login</h2>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/register.html">Đăng ký</a>
+    <a href="/blogs.html">Blogs</a>
+  </nav>
+</header>
+<div class="container">
+  <h1>Đăng nhập</h1>
+  <div id="login-alert" class="alert hidden"></div>
+  <form id="login-form">
+    <label>Tên đăng nhập</label>
+    <input name="username" required placeholder="Nhập tên đăng nhập" title="Tên đăng nhập" />
+    <label>Mật khẩu</label>
+    <input type="password" name="password" required placeholder="Nhập mật khẩu" title="Mật khẩu" />
+    <button type="submit">Đăng nhập</button>
+  </form>
+  <p>Sau khi đăng nhập token sẽ hiển thị bên dưới và lưu vào LocalStorage để các trang khác dùng.</p>
+  <pre id="token-box" class="hidden"></pre>
+</div>
+<footer>© 2025 Blog App</footer>
+<script src="/js/app.js"></script>
+<script>
+  App.initLogin();
+</script>
+</body>
+</html>

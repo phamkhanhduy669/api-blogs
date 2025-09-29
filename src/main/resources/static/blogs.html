@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blogs - Blog App</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<header>
+  <h2>Blogs</h2>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/login.html">Đăng nhập</a>
+    <a href="/register.html">Đăng ký</a>
+    <a href="#" id="logout-link">Đăng xuất</a>
+  </nav>
+</header>
+<div class="container">
+  <div id="auth-info"></div>
+  <h1>Blogs của bạn</h1>
+  <div id="blogs-alert" class="alert hidden"></div>
+  <section id="create-blog-section" class="hidden">
+    <h2>Tạo mới</h2>
+    <form id="create-blog-form">
+      <label>Tiêu đề</label>
+      <input name="title" required placeholder="Tiêu đề" />
+      <label>Nội dung</label>
+      <textarea name="content" rows="5" placeholder="Nội dung" required></textarea>
+      <button type="submit">Lưu</button>
+    </form>
+    <hr />
+  </section>
+  <div id="blogs-list"></div>
+
+  <section id="admin-users-section" class="hidden">
+    <h2>Quản lý user (ADMIN)</h2>
+    <div id="users-alert" class="alert hidden"></div>
+    <div id="users-list"></div>
+  </section>
+</div>
+<footer>© 2025 Blog App</footer>
+<script src="/js/app.js"></script>
+<script>
+  App.initBlogs();
+</script>
+</body>
+</html>
